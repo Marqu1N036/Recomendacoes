@@ -2,13 +2,13 @@
 
 body{
     background-color: black;
-    background-image: url(./imagens/cropped-1920-1080-74381.JPG);
+    background-image: url(./cropped-1920-1080-74381.JPG);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Kanit', sans-serif;
 }
 .bodyterror{
-    background-image: url(./imagens/720185.jpg);
+    background-image: url(./720185.jpg);
 }
 .terrorh1{
     color: red;
@@ -24,11 +24,11 @@ body{
     text-align: center;
 }
 .bodyworld{
-    background-image: url(./imagens/cropped-1920-1080-1112411.jpg);
+    background-image: url(./cropped-1920-1080-1112411.jpg);
 
 }
 .bodycoop{
-    background-image:url(./imagens/cropped-1920-1080-1127813.jpg);
+    background-image:url(./cropped-1920-1080-1127813.jpg);
 }
 .worldh1{
     color: white;
