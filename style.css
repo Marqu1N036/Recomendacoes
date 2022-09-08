@@ -1,17 +1,40 @@
-*{margin: 0; padding: 0;}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body{
     background-color: black;
-    background-image: url(./cropped-1920-1080-74381.JPG);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Kanit', sans-serif;
+
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #000000, #3D0000, #950101, #FF0000);
+    background-size: 300% 300%;
+    animation: colors 15s ease infinite;
 }
-.bodyterror{
-    background-image: url(./720185.jpg);
+
+@keyframes colors{
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%
+    }
+    
+    100%{
+        background-position: 0% 50%;
+    }
 }
+
 .terrorh1{
-    color: red;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,13 +46,9 @@ body{
     -webkit-backdrop-filter: blur(10px);
     text-align: center;
 }
-.bodyworld{
-    background-image: url(./cropped-1920-1080-1112411.jpg);
 
-}
-.bodycoop{
-    background-image:url(./cropped-1920-1080-1127813.jpg);
-}
+
+
 .worldh1{
     color: white;
     display: flex;
@@ -110,7 +129,7 @@ img{
     border-radius: 10%;
 }
 img:hover {
-    width: 350px;
+    width: 320px;
 }
 .containerterror{
     display: flex;
@@ -159,8 +178,9 @@ img:hover {
     width: 100%;
     height: 0;
     z-index: -1;
-    background-color: black;
+    background-color: #000000;
     transition: height .25s linear; 
+    border-radius: 15px;
 }
     
 .menus:hover::before{
@@ -190,8 +210,9 @@ footer{
     margin-left: 38%;
     font-size: larger;
     color: white;
-    background-color: black;
     display: inline;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .sobre{
@@ -226,9 +247,55 @@ footer{
 }
 .coopt{
     text-align: center;
-    color: black;
+    color: white;
     background-color:rgba(255, 255, 255, 0.1);
     font-weight: bold;
     font-size: 2rem;
     margin: 5px;
+}
+
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20%;
+    transform: translate(-50%, -50%);
+    
+    border-radius: 10px;
+    padding-top: 30px;
+}
+label{
+    font-size: large;
+    color: white;
+}
+
+input[type=text]{
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+}
+input[type=password]{
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+}
+input[type=submit]{
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
 }

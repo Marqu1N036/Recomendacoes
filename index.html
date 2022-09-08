@@ -9,8 +9,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet">
     <title>Recomendações de jogos</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+    document.querySelector('body')
+          .classList
+          .add('loaded');
+});
+    </script>
+    <style>
+        @keyframes fade-in {
+  from { opacity: 0 }
+  to   { opacity: 1 }
+}
+
+img {
+  opacity: 0;
+  animation: fade-in 2s normal forwards ease-in-out;
+  animation-play-state: paused
+}
+
+body.loaded img {
+  animation-play-state: running
+}
+
+body.loaded img:nth-child(2){ animation-delay: 1s }
+body.loaded img:nth-child(3){ animation-delay: 2s }
+body.loaded img:nth-child(4){ animation-delay: 3s }
+
+    </style>
+
+
+
 </head>
- <div id="titulo">Melhores jogos de cada categoria</div>
+<body class="gradient"> 
+<div id="titulo">Melhores jogos de cada categoria</div>
 
 <div class="corpo1">
     <nav>
@@ -22,6 +54,7 @@
             <li><a class="menus" href="https://store.epicgames.com/pt-BR/">Epic Games</a></li>
             </ul>     
         </li>
+        <li><a class="menus" href="login.html">Login</a></li>
         <li><a class="menus" href="sobre.html">Sobre</a></li>
     </ul>
     </nav> 
@@ -32,18 +65,20 @@
     <div class="container">
         <div>
             <h1 class="terror">Terror</h1>
-            <a href="terror.html"><img src="./766105.jpg" alt="The last of us"/></a>
+            <a href="terror.html"><img src="./imagens/766105.jpg" alt="The last of us"/></a>
         </div>
         <div>
             <h1 class="mundo">Mundo aberto</h1>
-            <a href="openworld.html"><img src="./754458.jpg"/></a>
+            <a href="openworld.html"><img src="./imagens/754458.jpg"/></a>
         </div>
         <div>
             <h1 class="coop">Co-op</h1>
-            <a href="coop.html"><img src="./910531.jpg" alt=""></a>
+            <a href="coop.html"><img src="./imagens/910531.jpg" alt=""></a>
         </div>
     </div>
 </div>
-    <footer>Desenvolvido pelo Marcos Vinicius dos Santos Gomes</footer>
+<div class="rodape">
+    <footer>Desenvolvido por Marcos Vinicius dos Santos Gomes</footer>
+</div>    
 </body>
 </html>
